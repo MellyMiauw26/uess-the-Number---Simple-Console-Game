@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title> Rate die Zahl</title>
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      background-color: #fff0f5;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-image: url('https://emojicdn.elk.sh/💗');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 150px;
+    }
+
+    .container {
+      background-color: white;
+      border-radius: 12px;
+      padding: 2rem 3rem;
+      box-shadow: 0 0 20px rgba(255, 105, 180, 0.3);
+      text-align: center;
+      max-width: 400px;
+      width: 100%;
+    }
+
+    h1 {
+      color: #ff69b4;
+      margin-bottom: 1rem;
+    }
+
+    input {
+      padding: 0.5rem;
+      font-size: 1rem;
+      width: 60%;
+      margin-bottom: 1rem;
+    }
+
+    button {
+      margin: 0.5rem;
+      padding: 0.5rem 1rem;
+      font-size: 1rem;
+      border: none;
+      border-radius: 5px;
+      background-color: #ff69b4;
+      color: white;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #ff1493;
+    }
+
+    #message {
+      margin-top: 1rem;
+      font-weight: bold;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>💗 Rate die Zahl</h1>
+    <p>Gib eine Zahl zwischen <strong>1 und 100</strong> ein:</p>
+
+    <input type="text" id="guessInput" placeholder="Deine Zahl..? :D" />
+    <br />
+    <button onclick="checkGuess()">Raten</button>
+    <button onclick="endGame()">Spiel beenden</button>
+
+    <p id="message"></p>
+  </div>
+
+  <script src="spiel.js"></script>
+</body>
+</html>
